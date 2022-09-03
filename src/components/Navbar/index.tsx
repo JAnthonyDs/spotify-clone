@@ -1,11 +1,15 @@
 import React from "react";
-import { Container } from "./Style";
+import { Container,SpotifyLogo } from "./Style";
+ 
 
 const Navbar: React.FC = () => {
     return(
         <Container>
             
-            <p>Spotify</p>
+            <section>
+                <SpotifyLogo/>
+                <p>Spotify</p>
+            </section>
             
             <div>
                 <ul>

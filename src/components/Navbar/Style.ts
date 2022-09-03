@@ -1,19 +1,18 @@
 import styled from "styled-components";
+import { FaSpotify} from 'react-icons/fa'
 
 export const Container = styled.div`
     display: flex;
     background-color: black;
-    width: 100%;
     color: white;
-    justify-content: space-between;
     height: 80px;
     align-items: center;
+    justify-content: space-around;
 
     p {
         cursor: pointer;
         font-size: 30px;
         font-weight: 700;
-        margin: 0 400px;
     }
 
     > div {
@@ -21,7 +20,8 @@ export const Container = styled.div`
             align-items: center;
             display: flex;
             list-style: none;
-            margin-right: 400px;
+            
+            justify-content: center;
 
             > li {
                 margin: 0 15px;
@@ -40,5 +40,18 @@ export const Container = styled.div`
             }
         }
     }
+
+    > section {
+        margin-left: 50px;
+        align-items: center;
+        display: flex;
+        padding: 0;
+    }
+
+`;
+
+export const SpotifyLogo = styled(FaSpotify)`
+    width: 36px;
+    height: 32px;
 
 `;

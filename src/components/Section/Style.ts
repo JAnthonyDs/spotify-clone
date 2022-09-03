@@ -5,9 +5,14 @@ interface Props {
     textColor: string
 }
 
+interface Btn {
+    colorButton: string,
+    textColor: string
+}
+
 export const Container = styled.div<Props>`
     background-color: ${props => props.bgcolor};
-    width: 100%;
+    
     height: 600px;
     display: flex;
     align-items: center;
@@ -44,4 +49,22 @@ export const Container = styled.div<Props>`
         }
     }
 
+`;
+
+export const Button = styled.button<Btn>`
+    color: ${props => props.textColor};
+    border-radius: 30px;
+    background-color: ${props => props.colorButton};
+    border: none;
+    width: 270px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 40px;
+    font-weight: 600;
+   
+    &:hover{
+        width: 280px;
+        height: 50px;
+    }
 `;
